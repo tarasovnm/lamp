@@ -6,25 +6,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.min.css" type="text/css">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>html template 3</title>
+  <title>ЭлипсЛед</title>
 </head>
 
 <body>
   <header class="header">
+    <div class="container">
+      <nav class="main-nav">
+        <a class="main-logo">
+          <img src="img/main-logo.svg" width="150" height="66" alt="Логотип ЭлипсЛед">
+        </a>
 
+        <ul class="site-nav">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Нам доверяют</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Фотографии</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Сертификаты</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Где нас найти?</a>
+          </li>
+        </ul>
+
+        <a class="company-phone" href="tel:89152543992">89152543992</a>
+
+      </nav>
+    </div>
   </header>
 
-  <section class="proposal">
+  <main class="page-main">
 
-  </section>
+    <h1 class="page-title visually-hidden">Элипслед</h1>
 
-  <section class="about-us">
+    <section class="proposal">
+      <div class="container">
+        <h2 class="proposal__title section-title">
+          У нас вы найдете лучшие светодиодные лампы для животоводства
+        </h2>
+        <p class="proposal__text">
+          Оставьте нам свой номер,и получите <em class="important-text">бесплатный</em> рассчет специально для
+          вас!
+        </p>
 
-  </section>
+        <form class="proposal__form">
+          <input type="tel" name="phone" id="phone" placeholder="7 (ххх) ххх хх хх"
+            pattern="2\([0-9]{3}\) [0-9]{3} [0-9]{2} [0-9]{2}">
+        </form>
+        <button type="submit">Отправить</button>
+      </div>
+    </section>
 
-  <sections class="partners">
+    <section class="about-us">
+      <div class="about-us__inner">
+        <h2 class="about-us__title section-title">
+          Расскажем вам немного о себе
+        </h2>
 
-  </sections>
+        <p class="about-us__text">
+          Мы ценим ваше время, по этому мы постараемся рассказать о <em class="important-text">главном вкратце!</em>
+        </p>
+
+        <ol class="about-us__list">
+          <li class="about-us__item">
+            Наша компания была основана в 2015 году, название ей «ЭлипсЛед». Занимаемся мы производством светильников
+            для животноводства
+          </li>
+          <li class="about-us__item">
+            Работаем мы исключительно на собственном оборудовании и только с качественным сырьем.
+          </li>
+          <li class="about-us__item">
+            С помощью команды наших специалистов мы смогли добиться одного из самых высоких уровней качества
+            светодиодных светильников для свиноводства, КРС, выращивания грибов!
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__title section-title">
+          Наши партнеры по бизнесу
+        </h2>
+
+        <p class="partners__text">
+          Хотим рассказать вам с кем мы сотрудничаем,и кто нам <em class="important-text">доверяет</em>
+        </p>
+
+        <ul class="partners__list">
+          <li class="partners__item">
+            <img class="partners__company-logo" src="img/partner-1.png" width="241" height="53" alt="Останкино">
+          </li>
+          <li class="partners__item">
+            <img class="partners__company-logo" src="img/partner-2.png" width="265" height="58" alt="Мираторг">
+          </li>
+          <li class="partners__item">
+            <img class="partners__company-logo" src="img/partner-3.png" width="244" height="89"
+              alt="Группа компаний Агро-Белогорье">
+          </li>
+          <li class="partners__item">
+            <img class="partners__company-logo" src="img/partner-4.png" width="241" height="80"
+              alt="Группа компаний РУСАГРО">
+          </li>
+          <li class="partners__item">
+            <img class="partners__company-logo" src="img/partner-5.png" width="241" height="103" alt="Комос-Групп">
+          </li>
+          <li class="partners__item">
+            <img class="partners__company-logo" src="img/partner-6.png" width="241" height="59" alt="ПРОМАГРО">
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
 
   <script src="js/script.min.js"></script>
 </body>
