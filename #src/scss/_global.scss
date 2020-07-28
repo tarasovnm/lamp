@@ -6,6 +6,15 @@
 
 body {
   font-family: $default-font;
+
+  background-image: url("../img/background.png");
+  background-position: top center;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
 img {

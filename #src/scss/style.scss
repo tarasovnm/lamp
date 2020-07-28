@@ -2,3 +2,71 @@
 @import "fonts";
 
 @import "global";
+
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.site-nav {
+  display: flex;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    display: block;
+    padding: 55px 36px;
+
+    font-size: 18px;
+    line-height: 29px;
+    text-decoration: none;
+    color: $light-text;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.company-phone {
+  padding: 55px 0;
+  margin-left: auto;
+
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $dark-text;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.section-title {
+  font-size: 60px;
+  line-height: 72px;
+  font-weight: bold;
+}
+
+.important-text {
+}
+
+.proposal {
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__form {
+  }
+}
