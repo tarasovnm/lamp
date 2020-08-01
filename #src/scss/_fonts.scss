@@ -1,4 +1,5 @@
 @import "_mixins/font-face";
 
+@include font("Calibri", "Calibri");
+@include font("Calibri", "Calibri-Bold", bold);
 @include font("SFUIDisplay", "SFUIDisplay-Regular");
-@include font("SFUIDisplay", "SFUIDisplay-Bold", bold);

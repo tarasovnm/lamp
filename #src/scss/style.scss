@@ -52,21 +52,167 @@
 }
 
 .section-title {
+  margin: 0;
+  padding: 0;
+
   font-size: 60px;
   line-height: 72px;
   font-weight: bold;
+
+  span {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 10px;
+      left: 0;
+      bottom: 15px;
+      z-index: -1;
+
+      background-color: $accent-color;
+    }
+  }
 }
 
 .important-text {
+  font-weight: bold;
+  font-style: normal;
+  color: $accent-color;
 }
 
 .proposal {
+  &__inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    padding-top: 75px;
+    padding-bottom: 90px;
+    background-image: url("../img/lamps-and-cow.jpg");
+    background-repeat: no-repeat;
+    background-position: 600px 0;
+    background-size: auto 100%;
+  }
+
   &__title {
+    max-width: 660px;
+    //margin-top: 60px;
+    margin-bottom: 25px;
   }
 
   &__text {
+    max-width: 330px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 36px;
+    color: $light-text;
   }
 
   &__form {
+    display: flex;
+
+    font-family: $form-font;
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  &__input {
+    width: 195px;
+    height: 57px;
+    text-align: center;
+
+    border: 1px solid #e1e1e1;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  &__button {
+    width: 195px;
+    height: 57px;
+    color: #ffffff;
+
+    background-color: $accent-color;
+    border: none;
+  }
+}
+
+.about-us {
+  &__inner {
+    max-width: 824px;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    text-align: center;
+  }
+
+  &__text {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__list {
+    padding-left: 427px;
+
+    background-image: url("../img/lamp.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &__item {
+    padding-top: 75px;
+    margin-bottom: 17px;
+
+    font-size: 18px;
+    line-height: 25px;
+
+    &:first-child {
+      padding-top: 55px;
+    }
+  }
+}
+
+.partners {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 10px;
+  }
+
+  &__text-column {
+    max-width: 427px;
+  }
+
+  &__text {
+    max-width: 250px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 717px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    width: 291px;
+    margin-bottom: 66px;
   }
 }
