@@ -162,6 +162,8 @@
 
   &__list {
     padding-left: 427px;
+    list-style: none;
+    counter-reset: list-counter;
 
     background-image: url("../img/lamp.jpg");
     background-repeat: no-repeat;
@@ -169,6 +171,9 @@
   }
 
   &__item {
+    position: relative;
+    counter-increment: list-counter;
+
     padding-top: 75px;
     margin-bottom: 17px;
 
@@ -177,6 +182,48 @@
 
     &:first-child {
       padding-top: 55px;
+    }
+
+    &::before {
+      content: counter(list-counter);
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      top: 20px;
+      right: 50%;
+      margin-right: -10px;
+      z-index: 2;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 14px;
+      color: $accent-color;
+
+      border: 1px solid $accent-color;
+      border-radius: 50%;
+      background-color: #ffffff;
+    }
+
+    &:first-child::before {
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 61px;
+      top: 0;
+      right: 50%;
+      z-index: 1;
+
+      background-color: $accent-color;
+    }
+
+    &:first-child::after {
+      height: 41px;
     }
   }
 }
