@@ -83,16 +83,28 @@
 }
 
 .proposal {
-  &__inner {
+  display: flex;
+  overflow: hidden;
+
+  &__content {
+    flex: 0 0 100%;
+    z-index: 2;
+  }
+
+  &__container {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 25px;
+  }
 
-    padding-top: 75px;
-    padding-bottom: 90px;
+  &__image {
+    flex: 0 0 50%;
+    transform: translate(-105%, 0);
+    z-index: 1;
+
     background-image: url("../img/lamps-and-cow.jpg");
     background-repeat: no-repeat;
-    background-position: 600px 0;
+    background-position: 0 0;
     background-size: auto 100%;
   }
 
